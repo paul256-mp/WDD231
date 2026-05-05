@@ -1,0 +1,136 @@
+/* small.css */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+  --primary: #1f3a5f;
+  --secondary: #4a90e2;
+  --light: #f4f4f4;
+  --dark: #222;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: var(--light);
+  color: var(--dark);
+}
+
+/* Prevent text touching edges */
+main,
+header,
+footer {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--primary);
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo span {
+  font-weight: 600;
+}
+
+/* NAVIGATION */
+#menuBtn {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  background: var(--primary);
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.75rem;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+/* No twitch hover */
+nav ul li a:hover {
+  background: var(--secondary);
+}
+
+/* Wayfinding */
+nav ul li a.active {
+  background: var(--secondary);
+}
+
+/* Toggle menu */
+nav.open ul {
+  display: flex;
+}
+
+/* MAIN LAYOUT */
+main {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Avoid single column everywhere */
+section {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* IMAGES */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background: var(--primary);
+  color: white;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.social img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Avoid horizontal scroll */
+html,
+body {
+  overflow-x: hidden;
+}

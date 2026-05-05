@@ -1,0 +1,44 @@
+/* larger.css */
+
+@media (min-width: 768px) {
+
+  /* HIDE HAMBURGER */
+  #menuBtn {
+    display: none;
+  }
+
+  /* HORIZONTAL NAV */
+  nav ul {
+    display: flex !important;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  nav ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  /* GRID LAYOUT (not single column) */
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  main h1 {
+    grid-column: 1 / -1;
+  }
+
+  section {
+    min-height: 150px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  main h1 {
+    grid-column: 1 / -1;
+  }
+}
