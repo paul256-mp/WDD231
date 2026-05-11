@@ -7,6 +7,13 @@
     display: none;
   }
 
+    :root {
+      --primary: #1f3a5f;
+      --secondary: #0056b3;
+      --light: #f4f4f4;
+      --dark: #222;
+    }
+
   /* HORIZONTAL NAV */
   nav ul {
     display: flex;
