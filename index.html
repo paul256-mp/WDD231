@@ -46,12 +46,19 @@
     <section>
       <img src="images/paul.jpeg" alt="Profile Picture" width="150" height="150">
     </section>
+    
     <section>
-      <h2>Web certificate Courses </h2>
-      <p>WDD130 - Web Development Fundamentals.</p>
-      <p>CSE210 - Object-Oriented Programming.</p>
-      <p>WDD131 - Web Development II.</p>
-      <p>WDD231 - Web Development III.</p>
+      <h2>Web Certificate Courses</h2>
+    
+      <div class="filters">
+        <button id="all">All</button>
+        <button id="wdd">WDD</button>
+        <button id="cse">CSE</button>
+      </div>
+    
+      <div id="courses"></div>
+    
+      <p>Total Credits: <span id="totalCredits"></span></p>
     </section>
   </main>
 
@@ -69,7 +76,7 @@
     </div>
 
     <p>
-      &copy; <span id="year"></span> | paul makumbi | ugandan
+       <span id="year"></span> | paul makumbi | ugandan
     </p>
 
     <p id="lastModified"></p>
