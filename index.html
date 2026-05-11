@@ -6,79 +6,131 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>WDD 231 - Home</title>
+
   <meta name="description" content="WDD 231 Course Home Page">
-  <meta name="author" content="Your Name">
+  <meta name="author" content="Paul Makumbi">
 
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="styles/larger_css.css">
+  <link rel="stylesheet" href="styles/larger.css">
 
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/date.js" defer></script>
+  <script src="scripts/courses.js" defer></script>
 </head>
 
 <body>
 
   <header>
+
     <div class="logo">
-      <img src="images/logo.svg" alt="Site Logo" width="40" height="40">
-      <span>my site</span>
+      <img src="images/logo.svg" alt="Website Logo" width="40" height="40">
+
+      <span>My Site</span>
     </div>
 
-    <button id="menuBtn">☰</button>
+    <button id="menuBtn" aria-label="Open navigation menu">
+      ☰
+    </button>
 
-    <nav id="navMenu">
+    <nav id="navMenu" aria-label="Main Navigation">
+
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="chamber/index.html">Chamber</a></li>
-        <li><a href="final/index.html">Final</a></li>
+        <li>
+          <a href="index.html" class="active">Home</a>
+        </li>
+
+        <li>
+          <a href="chamber/index.html">Chamber</a>
+        </li>
+
+        <li>
+          <a href="final/index.html">Final</a>
+        </li>
       </ul>
+
     </nav>
+
   </header>
 
   <main>
+
     <h1>Home</h1>
 
     <section>
+
       <h2>About Me</h2>
-      <p> My name is paul makumbi ugandan but living in qatar middleeast, i am passionate about web development and design. </p>
+
+      <p>
+        My name is Paul Makumbi. I am Ugandan living in Qatar,
+        Middle East. I am passionate about web development
+        and design.
+      </p>
+
     </section>
 
     <section>
-      <img src="images/paul.jpeg" alt="Profile Picture" width="150" height="150">
+
+      <img src="images/paul.jpeg" alt="Photo of Paul Makumbi" width="150" height="150" loading="lazy">
+
     </section>
-    
+
     <section>
+
       <h2>Web Certificate Courses</h2>
-    
+
       <div class="filters">
+
         <button id="all">All</button>
+
         <button id="wdd">WDD</button>
+
         <button id="cse">CSE</button>
+
       </div>
-    
+
       <div id="courses"></div>
-    
-      <p>Total Credits: <span id="totalCredits"></span></p>
+
+      <p>
+        Total Credits:
+        <span id="totalCredits"></span>
+      </p>
+
     </section>
+
   </main>
 
   <footer>
+
     <div class="social">
-      <a href="https://github.com/paul-256mp" target="_blank">
-        <img src="images/github.jpeg" alt="GitHub" width="24" height="24">
+
+      <a href="https://github.com/paul-256mp" target="_blank" rel="noopener" aria-label="Visit GitHub Profile">
+
+        <img src="images/github.jpeg" alt="GitHub Icon" width="24" height="24">
+
       </a>
-      <a href="https://linkedin.com/in/yourprofile">
-        <img src="images/linkedin.jpeg" alt="LinkedIn" width="24" height="24">
+
+      <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="Visit LinkedIn Profile">
+
+        <img src="images/linkedin.jpeg" alt="LinkedIn Icon" width="24" height="24">
+
       </a>
-      <a href="https://twitter.com/yourprofile">
-        <img src="images/x.jpeg" alt="Twitter" width="24" height="24">
+
+      <a href="https://x.com" target="_blank" rel="noopener" aria-label="Visit Twitter Profile">
+
+        <img src="images/x.jpeg" alt="Twitter Icon" width="24" height="24">
+
       </a>
+
     </div>
+
     <p>
-       <span id="year"></span> | paul makumbi | ugandan
+      
+      <span id="year"></span>
+      | Paul Makumbi | Uganda
     </p>
 
     <p id="lastModified"></p>
+
   </footer>
 
 </body>
