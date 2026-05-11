@@ -7,6 +7,10 @@
     display: none;
   }
 
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
     :root {
       --primary: #1f3a5f;
       --secondary: #0056b3;
