@@ -9,6 +9,7 @@ async function getMembers() {
   displayMembers(data);
 }
 
+
 const displayMembers = (members) => {
   members.forEach((member) => {
 
