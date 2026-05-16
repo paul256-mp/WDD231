@@ -1,0 +1,17 @@
+/* larger.css */
+
+@media screen and (min-width: 768px) {
+
+  nav ul {
+    display: flex;
+    gap: 1rem;
+  }
+
+  nav ul li {
+    margin: 0;
+  }
+
+  #members {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
