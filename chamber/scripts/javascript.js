@@ -1,7 +1,5 @@
-
-
 const url = "data/members.json";
-const cards = document.querySelector("#members");
+const cards = document.querySelector("#cards");
 
 async function getMembers() {
   const response = await fetch(url);
@@ -9,41 +7,27 @@ async function getMembers() {
   displayMembers(data);
 }
 
+getMembers();
 
 const displayMembers = (members) => {
+  cards.innerHTML = "";
+
   members.forEach((member) => {
-
     const card = document.createElement("section");
-    const name = document.createElement("h2");
-    const address = document.createElement("p");
-    const phone = document.createElement("p");
-    const website = document.createElement("a");
-    const image = document.createElement("img");
 
-    name.textContent = member.name;
-    address.textContent = member.address;
-    phone.textContent = member.phone;
-
-    website.textContent = member.website;
-    website.href = member.website;
-    website.target = "_blank";
-
-    image.setAttribute("src", `images/${member.image}`);
-    image.setAttribute("alt", member.name);
-    image.setAttribute("loading", "lazy");
-    image.setAttribute("width", "300");
-
-    card.appendChild(image);
-    card.appendChild(name);
-    card.appendChild(address);
-    card.appendChild(phone);
-    card.appendChild(website);
+    card.innerHTML = `
+            <img src="images/${member.image}" alt="${member.name}" loading="lazy">
+            <h2>${member.name}</h2>
+            <p>${member.address}</p>
+            <p>${member.phone}</p>
+            <p>${member.industry}</p>
+            <p>Membership Level: ${member.membership}</p>
+            <a href="${member.website}" target="_blank">Visit Website</a>
+        `;
 
     cards.appendChild(card);
   });
 };
-
-getMembers();
 
 const gridButton = document.querySelector("#grid");
 const listButton = document.querySelector("#list");
@@ -57,12 +41,3 @@ listButton.addEventListener("click", () => {
   cards.classList.add("list");
   cards.classList.remove("grid");
 });
-
-// footer.js
-
-const year = document.querySelector("#year");
-const lastModified = document.querySelector("#lastModified");
-
-year.textContent = new Date().getFullYear();
-
-lastModified.textContent = `Last Modified: ${document.lastModified}`;

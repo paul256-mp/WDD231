@@ -1,1 +1,72 @@
-https: //paul256-mp.github.io/wdd231/chamber/data/members.json
+[
+  {
+    "name": "ABC Enterprises",
+    "address": "123 Kampala Road, Kampala",
+    "phone": "+256 700 111111",
+    "website": "https://www.abcenterprises.com",
+    "image": "abc.webp",
+    "membership": 3,
+    "industry": "Manufacturing",
+    "description": "Leading manufacturing company in Uganda."
+  },
+  {
+    "name": "Pearl Tech Solutions",
+    "address": "45 Jinja Road, Kampala",
+    "phone": "+256 700 222222",
+    "website": "https://www.pearltech.com",
+    "image": "pearltech.webp",
+    "membership": 2,
+    "industry": "Technology",
+    "description": "Software and IT consulting services."
+  },
+  {
+    "name": "Kampala Fresh Foods",
+    "address": "78 Market Street, Kampala",
+    "phone": "+256 700 333333",
+    "website": "https://www.freshfoods.com",
+    "image": "freshfoods.webp",
+    "membership": 1,
+    "industry": "Food Supply",
+    "description": "Supplier of fresh agricultural products."
+  },
+  {
+    "name": "Nile Transport Ltd",
+    "address": "90 Entebbe Road, Kampala",
+    "phone": "+256 700 444444",
+    "website": "https://www.niletransport.com",
+    "image": "transport.webp",
+    "membership": 3,
+    "industry": "Transportation",
+    "description": "Cargo and passenger transport services."
+  },
+  {
+    "name": "Victoria Bank",
+    "address": "12 Bank Lane, Kampala",
+    "phone": "+256 700 555555",
+    "website": "https://www.victoriabank.com",
+    "image": "bank.webp",
+    "membership": 2,
+    "industry": "Finance",
+    "description": "Financial and banking solutions."
+  },
+  {
+    "name": "Sunrise Hotel",
+    "address": "33 Kololo Hill Drive, Kampala",
+    "phone": "+256 700 666666",
+    "website": "https://www.sunrisehotel.com",
+    "image": "hotel.webp",
+    "membership": 1,
+    "industry": "Hospitality",
+    "description": "Luxury accommodation and conference services."
+  },
+  {
+    "name": "Eco Energy Uganda",
+    "address": "56 Green Avenue, Kampala",
+    "phone": "+256 700 777777",
+    "website": "https://www.ecoenergy.com",
+    "image": "energy.webp",
+    "membership": 3,
+    "industry": "Energy",
+    "description": "Renewable energy and solar solutions."
+  }
+]
