@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join | Doha Chamber of Commerce</title>
+
+  <link rel="stylesheet" href="styles/join.css">
+  <script defer src="scripts/join.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <h1>Doha Chamber of Commerce</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="discover.html">Discover</a>
+    <a href="directory.html">Directory</a>
+    <a href="join.html">Join</a>
+  </nav>
+
+  <main class="join-page">
+
+    <section class="form-section">
+
+      <h2>Membership Application</h2>
+
+      <form method="get" action="thankyou.html">
+
+        <label>
+          First Name
+          <input type="text" name="fname" title="Enter your first name" autocomplete="given-name" required>
+        </label>
+
+        <label>
+          Last Name
+          <input type="text" name="lname" title="Enter your last name" autocomplete="family-name" required>
+        </label>
+
+        <label>
+          Organizational Title
+          <input type="text" name="orgtitle" title="Enter your organizational title" autocomplete="organization-title"
+            pattern="[A-Za-z\s\-]{7,}" placeholder="Marketing Manager">
+        </label>
+
+        <label>
+          Email Address
+          <input type="email" name="email" title="Enter your email address" autocomplete="email"
+            placeholder="example@email.com" required>
+        </label>
+
+        <label>
+          Mobile Phone Number
+          <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+        </label>
+
+        <label>
+          Business/Organization Name
+          <input type="text" name="business" title="Enter your business name" autocomplete="organization" required>
+        </label>
+
+        <label>
+          Membership Level
+          <select name="membership" required>
+            <option value="">Select Membership</option>
+            <option value="np">NP Membership</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+          </select>
+        </label>
+
+        <label>
+          Business Description
+          <textarea name="description" title="Describe your organization"></textarea>
+        </label>
+
+        <input type="hidden" name="timestamp" id="timestamp">
+
+        <input type="submit" value="Submit Application">
+
+      </form>
+
+    </section>
+
+    <aside class="membership-cards">
+
+      <div class="card">
+        <h3>NP Membership</h3>
+        <p>Free for non-profit organizations.</p>
+        <button onclick="document.getElementById('npModal').showModal()">
+          Learn More
+        </button>
+      </div>
+
+      <div class="card">
+        <h3>Bronze Membership</h3>
+        <p>Basic business exposure and events.</p>
+        <button onclick="document.getElementById('bronzeModal').showModal()">
+          Learn More
+        </button>
+      </div>
+
+      <div class="card">
+        <h3>Silver Membership</h3>
+        <p>Training and advertising opportunities.</p>
+        <button onclick="document.getElementById('silverModal').showModal()">
+          Learn More
+        </button>
+      </div>
+
+      <div class="card">
+        <h3>Gold Membership</h3>
+        <p>Premium spotlight and sponsorship benefits.</p>
+        <button onclick="document.getElementById('goldModal').showModal()">
+          Learn More
+        </button>
+      </div>
+
+    </aside>
+
+  </main>
+
+  <!-- NP Modal -->
+  <dialog id="npModal">
+    <h3>NP Membership Benefits</h3>
+    <p>Free membership, event access, and directory listing.</p>
+    <button onclick="document.getElementById('npModal').close()">Close</button>
+  </dialog>
+
+  <!-- Bronze Modal -->
+  <dialog id="bronzeModal">
+    <h3>Bronze Membership Benefits</h3>
+    <p>Networking events and basic advertising opportunities.</p>
+    <button onclick="document.getElementById('bronzeModal').close()">Close</button>
+  </dialog>
+
+  <!-- Silver Modal -->
+  <dialog id="silverModal">
+    <h3>Silver Membership Benefits</h3>
+    <p>Training programs, discounts, and featured listings.</p>
+    <button onclick="document.getElementById('silverModal').close()">Close</button>
+  </dialog>
+
+  <!-- Gold Modal -->
+  <dialog id="goldModal">
+    <h3>Gold Membership Benefits</h3>
+    <p>Premium homepage spotlight, sponsorships, and promotions.</p>
+    <button onclick="document.getElementById('goldModal').close()">Close</button>
+  </dialog>
+
+  <footer>
+    <p>&copy; 2026 Doha Chamber of Commerce</p>
+  </footer>
+
+</body>
+
+</html>
