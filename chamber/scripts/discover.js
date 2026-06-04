@@ -12,7 +12,7 @@ function displayPlaces() {
 
             <figure>
                 <img
-                    src="${place.images}"
+                    src="${place.image}"
                     alt="${place.name}"
                     loading="lazy"
                     width="300"
