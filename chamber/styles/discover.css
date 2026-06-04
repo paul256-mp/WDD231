@@ -1,3 +1,9 @@
+ot {
+  --primary: #2E7D32;
+  --secondary: #FBC02D;
+  --background: #F5F5DC;
+}
+
 .discover-main {
   padding: 1rem;
 }
