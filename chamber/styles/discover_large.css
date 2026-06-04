@@ -1,0 +1,27 @@
+@media (min-width: 1025px) {
+
+  .discover-grid {
+
+    grid-template-columns:
+      1fr 1fr 1fr;
+
+    grid-template-areas:
+      "card1 card1 card2"
+      "card3 card4 card2"
+      "card5 card6 card7"
+      "card5 card8 card8";
+  }
+
+}
+
+@media (min-width: 641px) {
+
+  .card img {
+    transition: transform .3s ease;
+  }
+
+  .card img:hover {
+    transform: scale(1.05);
+  }
+
+}
