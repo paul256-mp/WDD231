@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "name": "Industrial Waste Collection",
+    "type": "Hazardous",
+    "availability": "24/7",
+    "description": "Collection and transportation of industrial waste."
+  },
+  {
+    "id": 2,
+    "name": "Plastic Recycling",
+    "type": "Recycling",
+    "availability": "Daily",
+    "description": "Processing and recycling plastic materials."
+  },
+  {
+    "id": 3,
+    "name": "Paper Recycling",
+    "type": "Recycling",
+    "availability": "Daily",
+    "description": "Recovery and recycling of paper products."
+  },
+  {
+    "id": 4,
+    "name": "Metal Recycling",
+    "type": "Recycling",
+    "availability": "Daily",
+    "description": "Sorting and recycling metal waste."
+  },
+  {
+    "id": 5,
+    "name": "E-Waste Management",
+    "type": "Electronic",
+    "availability": "Weekly",
+    "description": "Safe disposal of electronic equipment."
+  },
+  {
+    "id": 6,
+    "name": "Glass Recycling",
+    "type": "Recycling",
+    "availability": "Daily",
+    "description": "Collection and recycling of glass products."
+  },
+  {
+    "id": 7,
+    "name": "Organic Waste Composting",
+    "type": "Organic",
+    "availability": "Daily",
+    "description": "Converting organic waste into compost."
+  },
+  {
+    "id": 8,
+    "name": "Hazardous Waste Treatment",
+    "type": "Hazardous",
+    "availability": "24/7",
+    "description": "Safe treatment of hazardous materials."
+  },
+  {
+    "id": 9,
+    "name": "Construction Waste Management",
+    "type": "Construction",
+    "availability": "On Request",
+    "description": "Handling construction and demolition waste."
+  },
+  {
+    "id": 10,
+    "name": "Bulk Waste Collection",
+    "type": "Municipal",
+    "availability": "Weekly",
+    "description": "Collection of oversized waste items."
+  },
+  {
+    "id": 11,
+    "name": "Medical Waste Disposal",
+    "type": "Medical",
+    "availability": "24/7",
+    "description": "Secure disposal of healthcare waste."
+  },
+  {
+    "id": 12,
+    "name": "Waste Auditing",
+    "type": "Consulting",
+    "availability": "Business Hours",
+    "description": "Analysis of waste streams and practices."
+  },
+  {
+    "id": 13,
+    "name": "Environmental Monitoring",
+    "type": "Environmental",
+    "availability": "Business Hours",
+    "description": "Monitoring environmental compliance."
+  },
+  {
+    "id": 14,
+    "name": "Resource Recovery",
+    "type": "Recovery",
+    "availability": "Daily",
+    "description": "Recovering reusable materials from waste."
+  },
+  {
+    "id": 15,
+    "name": "Sustainability Consulting",
+    "type": "Consulting",
+    "availability": "Business Hours",
+    "description": "Advising organizations on waste reduction."
+  }
+]
