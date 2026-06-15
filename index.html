@@ -5,139 +5,87 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>WDD 231 - Home</title>
+  <title>QatarEnergy Waste Management Facility</title>
 
-  <meta name="description" content="WDD 231 Course Home Page showing information about the course and my background " >
+  <meta name="description"
+    content="QatarEnergy Waste Management Facility supporting sustainable waste management and recycling.">
+
   <meta name="author" content="Paul Makumbi">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <meta property="og:title" content="QatarEnergy Waste Management Facility">
+  <meta property="og:description" content="Sustainable waste management and recycling solutions.">
+  <meta property="og:type" content="website">
 
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="styles/large_css.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="styles/normalize.css">
 
-  <script src="scripts/navigation.js" defer></script>
-  <script src="scripts/date.js" defer></script>
-  <script src="scripts/navigation.js" defer></script>
+  <script type="module" src="scripts/main.js" defer></script>
 </head>
 
 <body>
 
   <header>
+    <h1>QatarEnergy WMF</h1>
 
-    <div class="logo">
-      <img src="images/download.webp" alt="Website Logo" width="40" height="40">
+    <button id="menuBtn">☰</button>
 
-      <span>My Site</span>
-    </div>
-
-    <button id="menuBtn" aria-label="Open navigation menu">
-      ☰
-    </button>
-
-    <nav id="navMenu" aria-label="Main Navigation">
-
-      <ul>
-        <li>
-          <a href="index.html" class="active">Home</a>
-        </li>
-
-        <li>
-          <a href="chamber/index.html">Chamber</a>
-        </li>
-
-        <li>
-          <a href="final/index.html">Final</a>
-        </li>
-      </ul>
-
+    <nav id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="join.html">Contact</a>
     </nav>
-
   </header>
 
   <main>
 
-    <h1>Home</h1>
-
-    <section>
-
-      <h2>About Me</h2>
+    <section class="hero">
+      <h2>Waste Management Facility</h2>
 
       <p>
-        My name is Paul Makumbi. I am Ugandan living in Qatar,
-        Middle East. I am passionate about web development
-        and design.
+        Promoting environmental sustainability through
+        responsible waste collection, recycling, and recovery.
       </p>
 
+      <button id="themeBtn">
+        Toggle Dark Mode
+      </button>
     </section>
 
     <section>
-      <h2>Photo</h2>
-
-      <img src="images/paul.jpeg" alt="Photo of Paul Makumbi" width="150" height="150" loading="lazy">
-
-    </section>
-
-    <section>
-
-      <h2>Web Certificate Courses</h2>
-
-      <div class="filters">
-
-        <button id="all">All</button>
-
-        <button id="wdd">WDD</button>
-
-        <button id="cse">CSE</button>
-
-      </div>
-
-      <div id="courses"></div>
+      <h2>About WMF</h2>
 
       <p>
-        Total Credits:
-        <span id="totalCredits"></span>
+        QatarEnergy Waste Management Facility supports
+        sustainable waste practices through recycling,
+        waste segregation, and environmental protection.
       </p>
-
     </section>
+
+    <section>
+      <h2>Waste Management Statistics</h2>
+
+      <div id="statsContainer" class="cards"></div>
+    </section>
+
+    <section>
+      <h2>Our Services</h2>
+
+      <div id="serviceContainer" class="cards"></div>
+    </section>
+
+    <dialog id="serviceModal">
+      <div id="modalContent"></div>
+
+      <button id="closeModal">
+        Close
+      </button>
+    </dialog>
 
   </main>
 
   <footer>
-
-    <div class="social">
-
-      <a href="https://github.com/paul-256mp" target="_blank" rel="noopener" aria-label="Visit GitHub Profile">
-
-        <img src="images/github.jpeg" alt="GitHub Icon" width="24" height="24">
-
-      </a>
-
-      <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="Visit LinkedIn Profile">
-
-        <img src="images/linkedin.jpeg" alt="LinkedIn Icon" width="24" height="24">
-
-      </a>
-
-      <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Visit Twitter Profile">
-
-        <img src="images/twitter.jpeg" alt="Twitter Icon" width="24" height="24">
-
-      </a>
-
-    </div>
-
-    <p>
-      
-      <span id="year"></span>
-      | Paul Makumbi | Uganda
-    </p>
-
-    <p id="lastModified"></p>
-
+    <p>&copy; 2026 QatarEnergy WMF | Paul Makumbi</p>
   </footer>
 
 </body>

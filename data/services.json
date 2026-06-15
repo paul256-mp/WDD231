@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Industrial Waste Collection",
+    "type": "Hazardous",
+    "availability": "24/7",
+    "description": "Collection and transportation of industrial waste."
+  },
+  {
+    "id": 2,
+    "name": "Plastic Recycling",
+    "type": "Recycling",
+    "availability": "Daily",
+    "description": "Plastic recovery and recycling."
+  },
+  {
+    "id": 3,
+    "name": "Paper Recycling",
+    "type": "Recycling",
+    "availability": "Daily",
+    "description": "Paper recycling operations."
+  },
+  {
+    "id": 4,
+    "name": "Metal Recycling",
+    "type": "Recycling",
+    "availability": "Daily",
+    "description": "Metal sorting and recovery."
+  },
+  {
+    "id": 5,
+    "name": "E-Waste Processing",
+    "type": "Electronic",
+    "availability": "Weekly",
+    "description": "Safe handling of electronic waste."
+  }
+]
