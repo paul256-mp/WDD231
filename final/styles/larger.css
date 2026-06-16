@@ -4,7 +4,8 @@
 
   nav ul {
     display: flex;
-    gap: 1rem;
+    justify-content: space-evenly;
+    gap: 2rem;
   }
 
   nav ul li {
